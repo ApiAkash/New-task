@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+        <div class="container-main">
+    <img src="./Mobile – Graphic.png" alt="image"/>
+    </div>
+    
+    <div class="container-info">	
+        <div class="container">
+        <header>Create an Account</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your First name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter your Last name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" placeholder="18-100" size="3" min="18" required>
+                        </div> 
+                        <div class="input-field1">
+                            <label>Mobile Number</label>
+                            <input type="tel" id="phone" placeholder="xxx-xxxx-xxx" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="input-field1">
+                            <label>Email</label>
+                            <input type="text" placeholder="abcd@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}" required>
+                        </div>
+                        <div class="input-field3">
+                            <label>Description</label>
+                            <input type="text"  name="comment" form="usrform" placeholder="" />
+                            <p>MAX - 150 Words</p>
+                        </div>
+                        <br />
+                        <div class="input-field1">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter Confirm password" class="toggle-password" required>
+                        </div>
+
+                        <div class="input-field1">
+                            <label>Confirm Password</label>
+                            <input type="password"  placeholder="Enter Confirm password" class="toggle-password" required>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <input type="reset" class="button" value="RESET">
+                        <input type="submit" class="button" value="SUBMIT" onclick="myFunction()">
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+

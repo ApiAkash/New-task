@@ -1,0 +1,261 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('http://www.google.com/fonts/specimen/Lato');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.container-info {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 490px;
+    background-color: #fff; }
+    @media (min-width: 768px) {
+      .container-info {
+        float: left;
+        /*position: fixed;*/
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%; } 
+        img{
+            height: 660px;
+            width: 650px;
+            box-shadow: 5px 5px 10px 10px rgba(29, 187, 8, 0.1);
+            padding: 1%;
+            align-items: center;
+        }
+        }
+  
+  
+  
+  .container-main {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 490px;
+    background-color: #fff; }
+    @media (min-width: 768px) {
+      .container-main {
+        float: right;
+        /*position: fixed;*/
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%; } }
+  
+.container{
+    position: relative;
+    width: 99%;
+    border-radius: 6px;
+    padding: 30px;
+    height: 650px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
+}
+.container header{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #4C3E79;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 500px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.container form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #222222;
+    font-family: 'Lato';
+    font-weight: 800;
+    
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+form .fields .input-field1{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+form .fields .input-field3{
+    display: flex;
+    width: calc(100% / 1 - 30px);
+    flex-direction: column;
+    margin: 1px 0;
+}
+.input-field label{
+    font-size: 12px;
+    color: #222222;
+    font-weight: 550;
+}
+.input-field1 label{
+    font-size: 12px;
+    color: #222222;
+    font-weight: 550;
+}
+.input-field3 label{
+    font-size: 12px;
+    color: #222222;
+    font-weight: 550;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field1 input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field3 input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 92px;
+    width: 588px;
+    margin: 8px 0;
+}
+p{
+    font-size: 12px;
+    text-align: right;
+    color: #999;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(26, 20, 20, 0.13);
+}
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.input-field1 input :focus,
+.input-field1 select:focus{
+    box-shadow: 0 3px 6px rgba(236, 9, 9, 0.13);
+}
+.input-field1 select,
+.input-field1 input[type="tel"]{
+    color: #707070;
+}
+.input-field1 input[type="text"]:valid{
+    color: #333;
+}
+
+.input-field3 input :focus,
+.input-field3 select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field3 select,
+.input-field3 input[type="text"]:valid{
+    color: #333;
+}
+
+.container form button, .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #fff;
+    border-color: #4070f4;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 120px;
+    cursor: pointer;
+    margin-top: 24px;
+    border-radius: 500px;
+  }
+.button:hover{
+    background-color: #4070f4;
+    color: #fff;
+}
+.toggle-password {
+    background: url("./see_password_icon.svg") no-repeat right;
+    background-size: 20px;
+    cursor: pointer;
+  }
+
+    
